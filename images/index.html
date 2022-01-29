@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog da Ceci</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <img
+          class="imglogo"
+          src="logo.png"
+          alt="logo"
+          height="100px"
+          width="100px"
+        />
+        <ul class="header-list">
+          <a href="index.html"> <li>Home</li> </a>
+          <a href="about.html"> <li>Sobre</li> </a>
+          <a href="contact.html"> <li>Contato</li> </a>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <h1>Banco de Dados - SQL</h1>
+        <p>
+          O SQL é uma linguagem para gerenciar um SGBD (Sistema Gerenciador de
+          Bancos de Dados). O Banco de Dados é composto de tabelas que são
+          compostas por registros (linhas, tuplas) e campos (colunas,
+          atributos).
+        </p>
+        <h3>O que são tabelas?</h3>
+        <p>
+          Podem ser definidas como uma coleção de entradas de dados relacionados
+          e consiste em linhas e colunas. No sistema relacional, as tabelas se
+          relacionam entre si utilizando determinadas linhas específicas. Uma
+          tabela tem campos que representam atributos. Os atributos são os dados
+          como nome, endereço, salário, data de nascimento, e assim por diante.
+          Um campo é uma coluna específica em uma tabela que mantém informações
+          específicas sobre cada registro.
+        </p>
+        <p>
+          <strong>Linha: </strong> É a entrada individual da tabela. Trata-se de
+          um conjunto de campos relacionados que caracterizam os dados de uma
+          entidade única.
+        </p>
+        <h3>Structured Query Language:</h3>
+
+        <p>
+          É a linguagem de consulta estruturada padrão para acesso ao BD. É
+          usada em diversos sistemas de gerenciamento como Oracle, PostGreSQL,
+          MySQL, SQL Server, Sybase, DB2, etc. Cada sistema pode usar um dialeto
+          do SQL, como T-SQL (SQL Server), PL/SQL (Oracle), JET SQL (Acess),
+          etc.
+        </p>
+        <h3>Funções do SQL:</h3>
+        <ul class="content-list">
+          <li>Permite acesso a dados em SGBD;</li>
+          <li>Permite definir os dados no BD e manipulá-los;</li>
+          <li>
+            Pode ser embutida em outras linguagens usando módulos SQL, e
+            bibliotecas;
+          </li>
+          <li>Permite criar BD e excluir tabelas;</li>
+          <li>
+            Permite a criação de viwes, stored procedures, e functions em um BD;
+          </li>
+          <li>
+            Permite configurar permissões de acesso em tabelas, procedimentos e
+            visões.
+          </li>
+        </ul>
+        <h3>Grupos de Comandos:</h3>
+        <p class="subtitle">
+          Data Definition Language: Lida com esquemas e descrições no BD, de
+          como os dados devem residir no BD. É referente a ESTRUTURA do BD.
+        </p>
+        <ul class="non-bulleted-list">
+          <li>
+            CREATE → para criar o BD e seus objetos (ex: tabela, índice,
+            visualizações, procedimentos de armazenamento), além de funções e
+            gatilhos.
+          </li>
+          <li>ALTER → modifica um objeto já existente no BD.</li>
+          <li>
+            DROP → exclui uma tabela inteira, uma visualização de tabela ou
+            outro objeto do BD.
+          </li>
+          <li>
+            TRUNCATE → remove todos os registros de uma tabela, incluindo todos
+            os espaços para registros serão excluídos.
+          </li>
+          <li>COMMENT → adiciona um comentário ao dicionário de dados.</li>
+          <li>RENAME → renomear um objeto.</li>
+        </ul>
+
+        <p class="subtitle">
+          DML: Data Manipulation Language: Lida com a manipulação de dados e
+          inclui as instruções SQL: mais comuns. É usada para armazenar,
+          modificar, recuperar e excluir, atualizar dados no BD.
+        </p>
+        <ul class="non-bulleted-list">
+          <li>SELECT → recupera dados no BD.</li>
+          <li>INSERT → insere dados numa tabela.</li>
+          <li>UPDATE → atualiza dados existentes em uma tabela.</li>
+
+          <li>
+            DELETE → exclui todos os registros de uma tabela no banco de dados.
+          </li>
+          <li>Operação MERGE - UPSERT → (inserir ou atualizar).</li>
+          <li>CALL → chama um subprograma PL/SQL ou Java.</li>
+          <li>EXPLAIN PLAN → interkpretação do caminho de acesso aos dados.</li>
+          <li>TABELA de BLOQUEIO → controle de simultaneidade.</li>
+        </ul>
+        <p>
+          Para diferenciar esses dois grupos de comandos, trago a frase de um
+          autor anônimo.
+        </p>
+        <img class="center" src="2022-01-28.png" alt="quote" />
+      </div>
+    </main>
+    <footer>Tech Blog da Ceci. Copyleft 2022.</footer>
+  </body>
+</html>
